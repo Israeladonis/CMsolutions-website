@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>CMSolutions</title>
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+      <div class="row mb-3">
+        <div class="col p-0">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="img/Untitled_Artwork.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                SOLUTIONS
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- SERVICES ROW -->
+      <div class="row bg-body-tertiary p-4 services-row">
+        <h3 class="text-center mb-3">MIS SERVICIOS</h3>
+        <hr>
+
+        <!-- DIVORCIOS -->
+        <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-3 mb-3">
+          <div class="card h-100 service-card">
+            <img src="img/split.jpg" class="card-img-top" alt="Divorcios">
+            <div class="card-body">
+              <h5 class="card-title">Divorcios</h5>
+              <p class="card-text service-text">Asistencia con divorcios simples y económicos para ayudarte a avanzar con claridad y tranquilidad.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMPUESTOS -->
+        <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-3 mb-3">
+          <div class="card h-100 service-card">
+            <img src="img/taxes.png" class="card-img-top" alt="Impuestos">
+            <div class="card-body">
+              <h5 class="card-title">Impuestos</h5>
+              <p class="card-text service-text">Declaración de impuestos personales y de negocio. Hacemos el proceso fácil, claro y accesible.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MIGRACION -->
+        <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-3 mb-3">
+          <div class="card h-100 service-card">
+            <img src="img/greencard.jpg" class="card-img-top" alt="Migración">
+            <div class="card-body">
+              <h5 class="card-title">Migración</h5>
+              <p class="card-text service-text">Te guiamos paso a paso con formularios, renovaciones y solicitudes migratorias con paciencia y apoyo.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TRADUCCIONES -->
+        <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-3 mb-3">
+          <div class="card h-100 service-card">
+            <img src="img/translate.jpg" class="card-img-top" alt="Traducciones">
+            <div class="card-body">
+              <h5 class="card-title">Traducciones</h5>
+              <p class="card-text service-text">Traducciones certificadas de actas, documentos legales y académicos. Aceptadas por agencias oficiales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WHO & CONTACT ROW -->
+      <div class="row mt-5 bottom-row">
+        <div class="col col-md-6 mb-3">
+          <div class="card border-success h-100">
+            <div class="card-body">
+              <h5 class="card-title">Quiénes Somos</h5>
+              <p class="card-text">
+                CM Solutions es un servicio dedicado a apoyar a inmigrantes y familias nuevas en los Estados Unidos.
+                Creemos en el respeto, la paciencia y la claridad en cada paso del proceso.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-md-6 mb-3">
+          <div class="card border-success h-100">
+            <div class="card-body">
+              <h5 class="card-title">Contáctenos</h5>
+              <p class="card-text">
+                📞 WhatsApp / Llamadas: <strong>555-555-5555</strong><br>
+                📧 Correo: <strong>cmsolutions@people.com</strong><br>
+                🕒 Lunes a Sábado — 9AM a 7PM<br>
+                Consultas en persona o en línea.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/675b2ebc00.js" crossorigin="anonymous"></script>
+  
+<!-- AI Chat Button -->
+<div class="ai-button" id="aiButton">
+  🤖 Ayuda AI
+</div>
+
+<!-- Chat Popup -->
+<div class="ai-chat" id="aiChat">
+  <div class="ai-chat-header">
+    <span id="chatTitle">Ayuda AI</span>
+    <button id="langToggle">EN</button>
+    <span id="closeChat">&times;</span>
+  </div>
+  <div class="ai-chat-body" id="chatBody">
+    ¡Hola! Soy tu asistente AI. ¿En qué puedo ayudarte hoy?
+  </div>
+  <input type="text" id="chatInput" placeholder="Escribe tu mensaje..." />
+</div>
+
+<!-- Your JS file -->
+<script src="script.js"></script>
+
+  <footer class="footer">
+      © 2024 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">CMsolutions.com</a>
+  </footer>
+
+
+  </body>
+
+</html>

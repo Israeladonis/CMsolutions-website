@@ -1,0 +1,215 @@
+/* =======================
+   GLOBAL
+======================= */
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* =======================
+   NAVBAR
+======================= */
+.navbar {
+    background-color: #ece4b7;
+    height: 80px;                   /* same as footer */
+    display: flex;
+    align-items: center;             /* vertical center */
+    justify-content: start;          /* left align brand/logo */
+    padding: 0 20px;                 /* horizontal spacing */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;             /* vertically center logo + text */
+    font-size: 40px;                 /* bigger SOLUTIONS text */
+    font-weight: bold;
+    color: #3C1518;                  /* brand color */
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    height: 70px;        /* increase size */
+    width: 70px;         /* keep it square for perfect circle */
+    border-radius: 50%;  /* makes it a circle */
+    object-fit: cover;   /* ensures it fills the circle */
+    margin-right: 15px;  /* space between logo and text */
+}
+
+/* =======================
+   MIS SERVICIOS HEADING
+======================= */
+.services-row h3 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #3C1518;           /* same as SOLUTIONS */
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* =======================
+   SERVICE CARDS
+======================= */
+.service-card {
+    background-color: #ddd7d1;       /* card background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    height: 100%;                     /* fills column height */
+}
+
+.service-card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-card .card-title {
+    color: #110f0f;                   /* dark text */
+    font-weight: bold;
+}
+
+.service-text {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #110f0f;                   /* dark text for readability */
+}
+
+/* Services row background */
+.services-row {
+    background-color: #fbd1a2;
+    padding: 2rem 0;
+}
+
+/* =======================
+   BOTTOM ROW CARDS
+======================= */
+.bottom-row {
+    margin-top: 60px;
+}
+
+.bottom-row .card {
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #ffecd3;
+    box-shadow: 0 4px 10px #7dcfb6;
+}
+
+.bottom-row .card-text {
+    text-align: justify;
+}
+
+.bottom-row .card-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #3C1518;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #7dcfb6;
+    padding-bottom: 5px;
+}
+
+/* Bottom row icons for cards */
+.bottom-row .col:nth-child(1) .card-title::after {
+    content: " ❓";
+    margin-left: 8px;
+}
+
+.bottom-row .col:nth-child(2) .card-title::after {
+    content: " 📞";
+    margin-left: 8px;
+}
+
+/* =======================
+   AI FLOATING BUTTON
+======================= */
+.ai-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #6ec89d;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.ai-button:hover {
+    background-color: #5ab086;
+    transform: scale(1.1);
+}
+
+/* =======================
+   AI CHAT POPUP
+======================= */
+.ai-chat {
+    display: none; 
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    font-family: Verdana, sans-serif;
+    z-index: 1001;
+    flex-direction: column;
+}
+
+.ai-chat-header {
+    background-color: #6ec89d;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ai-chat-body {
+    padding: 10px;
+    height: 150px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.ai-chat input {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    padding: 8px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+    background-color: #ece4b7;
+    height: 80px;                    
+    display: flex;
+    justify-content: center;        
+    align-items: center;             
+    padding: 0 20px;                
+    text-align: center;
+    color: #110f0f;
+}
+
+footer a {
+    color: #110f0f;
+    text-decoration: none;
+    margin-left: 5px;
+}
