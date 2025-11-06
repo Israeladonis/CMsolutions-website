@@ -6,7 +6,7 @@ CM Solutions is a bilingual (English & Spanish) service website providing suppor
 
 ## 🌐 Live Demo
 > *Add your website link here once deployed*  
-Example: https://yourusername.github.io/cm-solutions/
+Example: https://israeladonis.github.io/cm-solutions/
 
 ---
 
